@@ -54,10 +54,13 @@ function square(num){
 ---
 
 **Function Expression :**
+
 *Если вызвать до обяввления , то выдаст ошибку*
+
 ```javascript
 console.log(sqe(25))
 var sqe = function (num){
     return num **2
 }
 ```
+---
