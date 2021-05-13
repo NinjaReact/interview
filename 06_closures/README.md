@@ -72,3 +72,60 @@ manager.print()
 * return объекта с функциями
 * print() - выводит на экран все замкнутые значения массива fw
 * add() - добавляет в массив новый элемент (Элементы только для этого пользователя) 
+
+---
+
+**Очень странная механика**
+
+```javascript
+const fib = [1 ,  2 , 3  , 5 , 8 , 13]
+
+for(var i = 0; i < fib.length ; i++){
+    setTimeout(function () {
+        console.log(`fib[${i}] = ${fib[i]}`)
+    } , 1500)
+}
+```
+**Выведет :**
+* fib[6] = undefined
+* fib[6] = undefined
+* fib[6] = undefined
+* fib[6] = undefined
+* fib[6] = undefined
+* fib[6] = undefined
+
+**цикл фор срабатывает быстрее setTimeout и когда цикл доходит до :**
+```javascript
+for(var i = 6; 6 < fib.length; i++){}
+```
+**так как длина массива 6 (6 < 6) то цикл должен закончиться но вместо этого записывается 6**
+**6  элемента нету и поэтому undefined**
+
+---
+
+**Как решать проблему ? Поменять var на let**
+**так как let работает в блочном scope**
+```javascript
+for(let i = 0; i < fib.length ; i++)
+```
+---
+**Или использовать замыкания**
+
+**Делаем анонимную функцию и передаем в нее параметр i (замыкая его) , в 1 скобки вы поместим наш setTimeOut**
+```javascript
+for(var i = 0; i < fib.length ; i++){
+    ()(i)
+}
+```
+---
+
+**итоговый вариант где j = i↓**
+```javascript
+for(var i = 0; i < fib.length ; i++){
+    (function(j){
+        setTimeout(function () {
+            console.log(`fib[${j}] = ${fib[j]}`)
+        } , 1500)  
+    })(i)
+}
+```
