@@ -31,3 +31,27 @@ console.log('arrayTwo' , arrayTwo)
 * arrayOne [1 , 2 , 3 ,4 ]
 * arrayTwo [1 , 2 , 3 ,4 ]
 ---
+
+**Как копировать массивы без мутирования 1 массива ?**
+
+```javascript
+let arrayOne = [1 , 2 , 3]
+let arrayConcat = arrayOne.concat()
+```
+*Метод concat() без параметров возвращает копию массива*
+---
+
+**Сравнение массивов :**
+
+```javascript
+let arrayOne = [1 , 2 , 3]
+let arrayTwo = arrayOne
+let coppy = [1 , 2 , 3 ,4]
+
+arrayTwo.push(4)
+
+console.log(arrayOne === arrayTwo) //false
+console.log(arrayOne === coppy)    //true
+```
+**arrayOne и arrayTwo ссылаются на 1 объект и  поэтому true**
+**arrayOne и coppy ссылаются на разные объекты и поэтому false**

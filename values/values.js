@@ -7,5 +7,11 @@ console.log('seccondlet' , seccondlet)  // seccondlet 43
 let arrayOne = [1 , 2 , 3]
 let arrayTwo = arrayOne
 
-arrayTwo.push('arrayOne' , arrayOne)
+let arrayConcat = arrayOne.concat()
+arrayTwo.push(4)
+
+console.log('arrayOne' , arrayOne)
 console.log('arrayTwo' , arrayTwo)
+
+
+let coppy = [1 , 2 , 3 ,4]
