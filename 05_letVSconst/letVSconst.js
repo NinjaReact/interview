@@ -21,3 +21,13 @@ console.log('NoScope B', b)
 
 const array = ['js' , 'is' , 'awesome']
 array.push('!')
+array[0] = 'JS'
+
+//array = '' - ERROR
+
+const obj ={}
+
+obj.name = 'Naruto'
+obj.age = 16
+
+delete obj.name
