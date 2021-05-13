@@ -22,6 +22,7 @@ var i = 42
 
 console.log(i) // 42
 ```
+---
 
 **Пример 3. объявили переменную , но не задали ей значение**
 
@@ -31,6 +32,7 @@ console.log(i) // undefined
 i = 42
 console.log(i) // 42
 ```
+---
 
 **Перменные const и let не подвержены hoisting**
 *будет ошибка*
@@ -39,7 +41,7 @@ console.log(num)
 const num = 42
 console.log(num)
 ```
-
+---
 
 **Function Declaration :**
 

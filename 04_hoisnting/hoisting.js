@@ -38,7 +38,7 @@ function square(num){
 
 
 //Function Expression
-
+console.log(sqe(25))
 var sqe = function (num){
     return num **2
 }
