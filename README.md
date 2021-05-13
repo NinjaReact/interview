@@ -1,8 +1,8 @@
 #Типы данных :
 
-##null , undedined , boolean , number , string , object, symbol
+**null , undedined , boolean , number , string , object, symbol**
 
-**Всен типы данных кроме object - примитивные **
+**Все типы данных кроме object - примитивные **
 ---
 **отличия undedined от null :**
 undedined - не объявлена переменная , функция которая не возвращает ничего 
@@ -51,15 +51,18 @@ console.log(undedined + 42)		//undefined is not defined
 **== - Приводит типы данных обоих значений**
 **=== - Сравнивает значения без приведения типов данных**
 
-```javascript
-//true :
+
+**true :**
+```javaScript
 console.log(2 == '2')
 console.log(undefined == null)
 console.log('0' == false)
 console.log('0' == false)
 console.log('0' == false)
+```
 
-//false :
+**false :**
+```javaScript
 console.log(2 === '2')
 console.log(undefined === null)
 ```
