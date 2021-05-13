@@ -12,3 +12,21 @@ console.log('seccondlet' , seccondlet)  // seccondlet 43
 * Создаем переменную seccondlet и присваиваем значения переменной firstlet и прибавляем 1 
 * Вывод на экран firstlet 42 и seccondlet 43
 ---
+
+**Ссылочные типы данных**
+
+```javascript
+let arrayOne = [1 , 2 , 3]
+let arrayTwo = arrayOne
+
+arrayTwo.push(4)
+
+console.log('arrayOne' , arrayOne)
+console.log('arrayTwo' , arrayTwo)
+```
+
+* Создаем массив arrayOne
+* Создаем массив arrayTwo и передаем ему ссылку на arrayOne 
+* Добавляем в конец массива arrayTwo цифру 4 , поскольку мы передали ссылку в arrayTwo ,  то и изменится arrayOne
+
+---
