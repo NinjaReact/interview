@@ -13,5 +13,7 @@ arrayTwo.push(4)
 console.log('arrayOne' , arrayOne)
 console.log('arrayTwo' , arrayTwo)
 
-
 let coppy = [1 , 2 , 3 ,4]
+
+console.log(arrayOne === arrayTwo)
+console.log(arrayOne === coppy)
