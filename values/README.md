@@ -1,4 +1,4 @@
-#Value
+# Value
 ---
 **Переменные :**
 ```javascript
@@ -28,5 +28,6 @@ console.log('arrayTwo' , arrayTwo)
 * Создаем массив arrayOne
 * Создаем массив arrayTwo и передаем ему ссылку на arrayOne 
 * Добавляем в конец массива arrayTwo цифру 4 , поскольку мы передали ссылку в arrayTwo ,  то и изменится arrayOne
-
+* arrayOne [1 , 2 , 3 ,4 ]
+* arrayTwo [1 , 2 , 3 ,4 ]
 ---
