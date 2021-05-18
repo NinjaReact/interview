@@ -5,3 +5,8 @@ const thrid = () => console.log('Thrid')
 first()
 second()
 thrid()
+
+
+first()
+setTimeout(second, 0)
+thrid()
